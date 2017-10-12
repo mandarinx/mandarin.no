@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mandarin games</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+  <link rel="apple-touch-icon" href="https://cdn.css-tricks.com/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+  <meta name="description" content="Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the differnet possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart."/>
+  <link rel="canonical" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" />
+  -->
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="block logo">
+      <img src="logo-mandarin.svg" />
+    </div>
+
+    <div class="block about">
+      <h2>This is me</h2>
+      <p>My name is Thomas Viktil, and I'm an independent game developer with 17 years of professional experience. My speciality is performance optimizations and system architecture.</p>
+      <p>When working with others, I am usually in charge of implementing AI behaviour, building scalable and flexible systems, implementing cpu and memory efficient data structures and algorithms, in addition to performance optimizations and system architecture.</p>
+      <p>I have worked on 47 games of which 20 have been made for various clients.</p>
+    </div>
+
+    <div class="block games">
+      <h2>Games I have worked on</h2>
+      <div class="table">
+
+        <div>Statnett Balance</div>
+        <div class="content">
+          <p>A puzzle game about balancing a power grid. Over 3 million downloads.</p>
+          <p>
+            <a href="https://itunes.apple.com/no/app/balance-the-future-is-electric/id1057918243?mt=8">AppStore</a>
+            <a href="https://play.google.com/store/apps/details?id=no.statnett.balanse&hl=en">Google Play</a>
+          </p>
+        </div>
+
+        <div>Hocus Pocus Alfie Atkins</div>
+        <div class="content">
+          <p>An adventure game sprinkled with 10 mini games.</p>
+          <p>
+            <a href="https://itunes.apple.com/no/app/hocus-pocus-alfie-atkins/id689774817?mt=8">AppStore</a>
+            <a href="https://play.google.com/store/apps/details?id=no.hypergames.hokuspokuspremium&hl=en">Google Play</a>
+          </p>
+        </div>
+
+        <div>SYNG</div>
+        <div class="content">
+          <p>An interactive song app for the toddlers.</p>
+          <p>
+            <a href="https://itunes.apple.com/no/app/syng-barnesanger-p%C3%A5-norsk-i-en-vakker-sangbok/id1151798674?l=nb&mt=8">AppStore</a>
+            <a href="https://play.google.com/store/apps/details?id=no.stormfilms.syng">Google Play</a>
+          </p>
+        </div>
+
+        <div>JIPPI</div>
+        <div class="content">
+          <p>Two HTML5 based games made for a product series of healthy children's food.</p>
+          <p><a href="http://jippi.no/">Web</a></p>
+        </div>
+
+        <div>Chess Xpress</div>
+        <div class="content">
+            <p>An HTML5 based chess tournament.</p>
+            <p><a href="http://sjakk.dn.no/">Web</a></p>
+        </div>
+
+        <div>Hydro Rundt</div>
+        <div class="content">
+          <p>A game used internally to celebrate the 100th anniversary of Hydro</p>
+        </div>
+
+        <div>Post drop</div>
+        <div class="content"><p>Save letters and packages falling from a plane</p></div>
+
+        <div>The Mail Through Time</div>
+        <div class="content"><p>Travel back in time to deliver the mail</p></div>
+
+        <div>Post Racing</div>
+        <div class="content"><p>Race around town and deliver mail</p></div>
+
+        <div>Markus and The Moon Rocket</div>
+        <div class="content">
+          <p>An adventure game about a kid who builds a rocket out of scrap</p>
+        </div>
+
+        <div>Gyro Pacman</div>
+        <div class="content">
+          <p>Four player Pacman using dining tables as controllers</p>
+        </div>
+
+        <div>Ski Park</div>
+        <div class="content"><p>Teching kids about Norges Skiforbund</p></div>
+
+        <div>Loco Monos</div>
+        <div class="content"><p>For BAMA's Bendit campaign</p></div>
+
+        <div>Kjør!</div>
+        <div class="content">
+          <p>A summer campaign for Statoil Fuel and Retail</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="block clients">
+      <h2>Clients I have made games for</h2>
+      <div class="logos">
+        <div class="logo"><img src="logos/statnett.svg" /></div>
+        <div class="logo"><img src="logos/statoil.svg" /></div>
+        <div class="logo"><img src="logos/tine.svg" /></div>
+        <div class="logo"><img src="logos/posten.svg" /></div>
+        <div class="logo"><img src="logos/kpmg.svg" /></div>
+        <div class="logo"><img src="logos/dn.svg" /></div>
+        <div class="logo"><img src="logos/bama.svg" /></div>
+        <div class="logo"><img src="logos/hydro.svg" /></div>
+        <div class="logo"><img src="logos/gyro.svg" /></div>
+        <div class="logo"><img src="logos/norgesgruppen.svg" /></div>
+        <div class="logo"><img src="logos/norgesskiforbund.svg" /></div>
+        <div class="logo"><img src="logos/stormfilms.svg" /></div>
+      </div>
+    </div>
+
+    <div class="block talks">
+      <h2>Talks and courses</h2>
+      <div class="table">
+
+          <div>Data Oriented Design for games</div>
+          <div class="content"><p>Hedmark University of Applied Sciences</p></div>
+
+          <div>Intro to Data Oriented Design</div>
+          <div class="content"><p>Unity3D meetup</p></div>
+
+          <div>Developing mobile games with JavaScript</div>
+          <div class="content"><p>Framsia - A meetup about web technology</p></div>
+
+          <div>Storytelling with games</div>
+          <div class="content"><p>Held for various advertisement agencies</p></div>
+
+          <div>State of the games industry</div>
+          <div class="content"><p>Noroff University College</p></div>
+
+          <div>One week course in games programming with JavaScript</div>
+          <div class="content"><p>Noroff University College</p></div>
+      </div>
+    </div>
+
+    <div class="block contact">
+      <div class="card">
+        <h2>Contact me</h2>
+        <ul>
+          <li><a href="mailto:mandarin@mandarin.no">mandarin@mandarin.no</a></li>
+          <li><a href="tel:+4792689010">+47 926 89 010</a></li>
+          <li><a href="https://www.linkedin.com/in/thomasviktil/">LinkedIn</a></li>
+          <li><a href="https://twitter.com/mandarinx">Twitter</a></li>
+          <li><a href="https://github.com/mandarinx">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
