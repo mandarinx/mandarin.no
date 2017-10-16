@@ -5,7 +5,8 @@ var express         = require('express'),
     http            = require('http'),
     path            = require('path'),
     helmet          = require('helmet'),
-    compress        = require('compression')
+    compress        = require('compression'),
+    sslRedirect     = require('heroku-ssl-redirect')
     ;
 
 var staticOptions = {
@@ -70,7 +71,9 @@ var app = express()
         level: 9
     }))
 
-    .use('/', express.static(__dirname, staticOptions));
+    .use('/', express.static(__dirname, staticOptions))
+    .use(sslRedirect())
+    ;
 
 app.get('/.well-known/acme-challenge/:acmeToken', function(req, res, next) {
     var acmeToken = req.params.acmeToken;
