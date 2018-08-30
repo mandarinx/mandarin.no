@@ -107,13 +107,13 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+var server = app.listen(process.env.PORT, function() {
+    console.log('Server listening on port '+process.env.PORT);
+});
+
 process.on('SIGTERM', function() {
-    app.close(function() {
+    server.close(function() {
         console.log('Shutdown server');
         process.exit();
     });
-});
-
-app.listen(process.env.PORT, function() {
-    console.log('Server listening on port '+process.env.PORT);
 });
