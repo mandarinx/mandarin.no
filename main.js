@@ -25,6 +25,7 @@ var app = express()
         directives: {
             defaultSrc: [
                 "'self'",
+                'https://www.google-analytics.com/',
             ],
             styleSrc: [
                 "'self'",
