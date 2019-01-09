@@ -26,6 +26,7 @@ var app = express()
             defaultSrc: [
                 "'self'",
                 'https://www.google-analytics.com/',
+                'https://stats.g.doubleclick.net/',
             ],
             styleSrc: [
                 "'self'",
