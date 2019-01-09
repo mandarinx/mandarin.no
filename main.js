@@ -33,6 +33,8 @@ var app = express()
             scriptSrc: [
                 "'self'",
                 'www.google-analytics.com',
+                'www.googletagmanager.com',
+                's3.amazonaws.com',
             ],
             fontSrc: [
                 "'self'",
